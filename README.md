@@ -7,7 +7,11 @@ the spiral that is both not occupied and is not attacked by a knight of another 
 
 What is the resulting placement of the knights?
 
+Inspired by [this Numberphile video][1].
+
 ![example for 10 colors and up to 10000 knights](10@10000.png)
+
+![example for 2 colors and up to 100000 knights](2@100000.png)
 
 Requirements:
 
@@ -20,4 +24,6 @@ The convention is file names `C@K.png` for `C` colors and `K` knights, e.g. for 
 ```console
 $ make 2@1000.png
 ```
+
+[1]: https://www.youtube.com/watch?v=UiX4CFIiegM
 
