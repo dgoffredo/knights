@@ -1,0 +1,14 @@
+#!/bin/sh
+
+colors=$(./getcolors "$1")
+knights=$(./getknights "$1")
+
+gnuplot <<END_GNUPLOT
+set terminal png truecolor nocrop enhanced butt size 1080,1080 font "arial,18.0"
+set output '${1%.tab}.png'
+
+set title '$colors Colors, First $knights Knights'
+
+$(./plotcmd "$1")
+END_GNUPLOT
+
