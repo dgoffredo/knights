@@ -17,6 +17,7 @@ Requirements:
 
 - make
 - /bin/sh
+- head
 - gnuplot
 - a C++20 compiler
 
